@@ -390,6 +390,7 @@
         </div>
       </section>
     </main>
+    <!-- ------------------Footer-------------------- -->
     <footer class="footer">
       <div class="container footer-wrap">
         <div class="foter-content-wrap">
@@ -434,6 +435,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-wrap">
+          <p class="footer-form-text">Subscribe</p>
+          <form class="footer-form-subscribe">
+            <label>
+              <input
+                class="footer-form-input"
+                type="email"
+                name="your_email"
+                placeholder="Email"
+                required
+              />
+            </label>
+            <button type="submit" class="footer-btn-subscribe">
+              Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#copert-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!---------------------modal------------>
@@ -445,9 +466,87 @@
             <use href="./images/icons.svg#modal-btn"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-titel">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-form-label">
+            <span class="modal-form-text">Name</span>
+            <span class="modal-form-wrap">
+              <input
+                type="text"
+                name="your_name"
+                class="modal-form-date"
+                required="^[a-zA-Za-яА-ЯіІїЇ]+"
+                minlength="2"
+              />
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/icons.svg#modal-icon-name"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            <span class="modal-form-text">Phone</span>
+            <span class="modal-form-wrap">
+              <input
+                type="tel"
+                name="your_phone"
+                class="modal-form-date"
+                required
+                pattern="[0-9]{10}"
+                title="xxxxxxxxxx"
+              />
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/icons.svg#modal-icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            <span class="modal-form-text">Email</span>
+            <span class="modal-form-wrap">
+              <input
+                type="email"
+                name="your_email"
+                class="modal-form-date"
+                required="@"
+              />
+              <svg width="18" height="18" class="form-icon">
+                <use href="./images/icons.svg#modal-icon-mail"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label form-comment">
+            <span class="modal-form-text">Comment</span>
+            <textarea
+              name="your_coment"
+              class="modal-area-comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <div class="policy-wrap">
+            <input
+              type="checkbox"
+              name="akcept-policy"
+              id="policy"
+              required
+              class="modal-checkbox checkbox-hidden"
+            />
+
+            <label for="policy" class="modal-form-chek-policy"
+              ><svg width="10" height="8" class="policy-icon">
+                <use href="./images/icons.svg#chekbox-icon"></use>
+              </svg>
+              I accept the terms and conditions of the&nbsp;
+              <a href="" class="policy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-btn-submit">Send</button>
+        </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<!-- ---- -------->
